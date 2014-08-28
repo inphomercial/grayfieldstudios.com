@@ -181,6 +181,17 @@ BRUSHED.fancyBox = function(){
 				media : {}
 			}
 		});
+
+		/*beforeShow: function() {
+		    $('.fancybox-image')
+		        .width($(window).width())
+		        .height($(window).height());
+		},
+		onUpdate: function() {
+		    $('.fancybox-image')
+		        .width($(window).width())
+		        .height($(window).height());
+		},*/
 	}
 }
 
