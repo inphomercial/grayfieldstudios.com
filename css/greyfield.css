@@ -8,18 +8,27 @@ section {
 }
 
 .section_header {
-    background-color: #d9585d;
+    background-color: #D8585C;
+    height: 10vh;
+    color: #FFFFFF;
+    text-align: center;
 }
 
 /* Splash Section */
 .splash {
+    background-image: url("../img/background.jpg");
+    height: 80vh;
+}
+
+/* What Is Section */
+.what {
     background-color: #FFFFFF;
-    height: 90vh;
+    height: 30vh;
 }
 
 /* Skills Section */
 .skills {
-    background-color: #FE4B74;
+    background-color: #f4f5f9;
     height: 100vh;
 }
 
