@@ -1,0 +1,52 @@
+section {
+    width: 100%;
+    padding: 0;
+    display: table;
+    margin: 0;
+    max-width: none;
+    background-color: #373B44;
+}
+
+.section_header {
+    background-color: #d9585d;
+}
+
+/* Splash Section */
+.splash {
+    background-color: #FFFFFF;
+    height: 90vh;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #FE4B74;
+    height: 100vh;
+}
+
+/* Work Section */
+.work {
+    background-color: #FE4B74;
+    height: 100vh;
+}
+.box {
+    background-color: grey;
+    height: 150px;
+}
+
+/* Team Section */
+.team {
+    background-color: #FE4B74;
+    height: 100vh;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #FE4B74;
+    height: 100vh;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #FE4B74;
+    height: 30vh;
+}
