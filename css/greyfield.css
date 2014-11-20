@@ -80,6 +80,15 @@ section.intro p {
     font-size: 18px;
 }
 
+div.small-logo {
+    text-align: center;
+    padding: 40px;
+}
+
+div.small-logo img {
+    width: 100%;
+}
+
 /*=============================================================================
     SKILLS SECTION
 =============================================================================*/
