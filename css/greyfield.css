@@ -1,61 +1,143 @@
-section {
-    width: 100%;
-    padding: 0;
-    display: table;
-    margin: 0;
-    max-width: none;
-    background-color: #373B44;
+/*=============================================================================
+    COMMON STYLE
+=============================================================================*/
+@font-face {
+    font-family: 'FoundersGrotesk';
+    src: url('../fonts/FoundersGroteskWeb-Light.woff');
 }
 
-.section_header {
-    background-color: #D8585C;
-    height: 10vh;
-    color: #FFFFFF;
+body {
+    color: #6e6e6e;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family: 'FoundersGrotesk';
+}
+
+body h1, h2, h3 {
+    letter-spacing: 4px;
+}
+
+body h4, h5, h6 {
+    letter-spacing: 3px;
+}
+
+section {
+    padding: 5% 0;
     text-align: center;
 }
 
-/* Splash Section */
-.splash {
-    background-image: url("../img/background.jpg");
-    height: 80vh;
+hr.title-divider {
+    border-top: 3px solid #6e6e6e;
+    color: #6e6e6e;
+    padding-bottom: 5%;
+    width: 200px;
 }
 
-/* What Is Section */
-.what {
-    background-color: #FFFFFF;
-    height: 30vh;
+hr.subtitle-divider {
+    border-top: 3px solid #6e6e6e;
+    color: #6e6e6e;
+    padding-bottom: 5%;
+    width: 164px;
 }
 
-/* Skills Section */
-.skills {
-    background-color: #f4f5f9;
-    height: 100vh;
+div.title-banner {
+    background-color: #d8585c;
+    color: white;
+    height: 100px;
+    padding-top: 30px;
+    text-align: center;
 }
 
-/* Work Section */
-.work {
-    background-color: #FE4B74;
-    height: 100vh;
-}
-.box {
-    background-color: grey;
-    height: 150px;
+.subtitle {
+    padding: 5% 0 1% 0;
 }
 
-/* Team Section */
-.team {
-    background-color: #FE4B74;
-    height: 100vh;
+.col-centered{
+    float: none;
+    margin: 0 auto;
 }
 
-/* Contact Section */
-.contact {
-    background-color: #FE4B74;
-    height: 100vh;
+.bg-image {
+    width: 100%;
 }
 
-/* Footer Section */
-.footer {
-    background-color: #FE4B74;
-    height: 30vh;
+.tleft {
+    text-align: left;
+}
+
+.gf-button {
+    background-color: #d8585c;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+}
+
+/*=============================================================================
+    INTRO SECTION
+=============================================================================*/
+section.intro p {
+    font-size: 18px;
+}
+
+div.small-logo {
+    text-align: center;
+    padding: 40px;
+}
+
+div.small-logo img {
+    width: 100%;
+}
+
+/*=============================================================================
+    SKILLS SECTION
+=============================================================================*/
+
+section.skills {
+    background-color: #f7f7f7;
+}
+
+/*=============================================================================
+    WORK SECTION
+=============================================================================*/
+section.work {
+    background-color: #ebebeb;
+}
+
+/*=============================================================================
+    TEAM SECTION
+=============================================================================*/
+section.team {
+    background-color: #dedede;
+}
+
+hr.profile-divider {
+    border-top: 3px solid black;
+    color: black;
+    padding-bottom: 5%;
+    width: 100px;
+}
+
+/*=============================================================================
+    CONTACT SECTION
+=============================================================================*/
+section.contact {
+    background-color: #d1d1d1;
+}
+
+.gf-form {
+    background-color: #cccccc;
+    border: none;
+    border-bottom: 1px solid #b0b0b0;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.gf-form:last-child {
+    border: none;
+}
+
+.contact-info {
+    font-size: 13px;
+    line-height: 8px;
 }
