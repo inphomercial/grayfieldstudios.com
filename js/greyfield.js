@@ -3,6 +3,22 @@ var GREYFIELD = window.GREYFIELD || {};
 
 // $(".splash").backstretch("img/background.jpg");
 
+/* =================================================
+   Preload Slash
+================================================= */
+GREYFIELD.preLoad = function() {
+	// Preload the page with jPreLoader
+	$('body').jpreLoader({
+		splashID: "#jSplash",
+		showSplash: true,
+		showPercentage: true,
+		autoClose: true,
+		splashFunction: function() {
+			$('#circle').delay(250).animate({'opacity' : 1}, 500, 'linear');
+		}
+	});
+}
+
 /* ==================================================
    Contact Form
 ================================================== */
@@ -40,5 +56,6 @@ GREYFIELD.contactForm = function(){
 
 $(document).ready(function() {
     console.log("Loaded");
+    GREYFIELD.preLoad();
     GREYFIELD.contactForm();
 });
