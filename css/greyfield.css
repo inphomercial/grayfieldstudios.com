@@ -141,3 +141,11 @@ section.contact {
     font-size: 13px;
     line-height: 8px;
 }
+
+.contact-error {
+    color: #d8585c;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+}
+
