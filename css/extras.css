@@ -1,6 +1,6 @@
 
 .fullPageOverlay {
-    position:absolute;
+    position:fixed;
     top:0;
     left:0;
     width:100%;
@@ -10,7 +10,6 @@
 }
 
 #jSplash {
-	/* background-color: #2F3238; */
 	position: absolute;
 	width: 100%;
 	height: 100%;
