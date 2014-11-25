@@ -101,7 +101,22 @@ section.skills {
     WORK SECTION
 =============================================================================*/
 section.work {
+    padding: 0;
     background-color: #ebebeb;
+}
+
+.work-box {
+    width: 100%;
+    height: 200px;
+    background-color: #d1d1d1;
+    color: white;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /*=============================================================================
@@ -112,8 +127,8 @@ section.team {
 }
 
 hr.profile-divider {
-    border-top: 3px solid black;
-    color: black;
+    border-top: 3px solid #6e6e6e;
+    color: #6e6e6e;
     padding-bottom: 5%;
     width: 100px;
 }
