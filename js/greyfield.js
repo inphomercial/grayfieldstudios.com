@@ -1,13 +1,16 @@
 
 var GREYFIELD = window.GREYFIELD || {};
 
-// $(".splash").backstretch("img/background.jpg");
-
-/* =================================================
-   Preload Slash
-================================================= */
+/* #################
+ * # Preload Splash
+ * #################
+ */
 GREYFIELD.preLoad = function() {
-	// Preload the page with jPreLoader
+
+    // Start with white
+    $('#fullPage').addClass('fullPageOverlay');
+
+    // Preload the page with jPreLoader
 	$('body').jpreLoader({
 		splashID: "#jSplash",
 		showSplash: true,
@@ -15,13 +18,19 @@ GREYFIELD.preLoad = function() {
 		autoClose: true,
 		splashFunction: function() {
 			$('#circle').delay(250).animate({'opacity' : 1}, 500, 'linear');
-		}
-	});
+        }
+    }, function() {
+            // Fade white out to actual site
+            $('#fullPage').fadeOut(1000);
+        }
+    );
 }
 
-/* ==================================================
-   Contact Form
-================================================== */
+
+/* ###################
+ * # Contact Form
+ * ##################
+ */
 GREYFIELD.contactForm = function(){
 	$("#contact-submit").on('click',function() {
 		$contact_form = $('#contact-form');
@@ -54,8 +63,11 @@ GREYFIELD.contactForm = function(){
 	});
 }
 
+
 $(document).ready(function() {
-    console.log("Loaded");
+
+    console.log("Greyfield JS - Loaded");
+
     GREYFIELD.preLoad();
     GREYFIELD.contactForm();
 });
