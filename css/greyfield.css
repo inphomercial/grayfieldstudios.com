@@ -6,6 +6,12 @@
     src: url('../fonts/FoundersGroteskWeb-Light.woff');
 }
 
+@font-face {
+    font-family: 'FoundersGrotesk';
+    src: url('../fonts/FoundersGroteskWeb-Regular.woff');
+    font-weight: bold;
+}
+
 body {
     color: #6e6e6e;
     letter-spacing: 1px;
@@ -107,11 +113,52 @@ section.work {
 
 .work-box {
     width: 100%;
-    height: 200px;
-    background-color: #d1d1d1;
+    height: 245px;
     color: white;
-    text-align: center;
-    vertical-align: bottom;
+    padding-top: 40%;
+    background-repeat: no-repeat;
+}
+
+.work-box-empty {
+    width: 100%;
+    height: 245px;
+}
+
+.work-offwhite {
+    background-color: #F7F7F9;
+}
+
+.work-lightgrey {
+    background-color: #E8E8E8;
+}
+
+.work-grey {
+    background-color: #d1d1d1;
+}
+
+.work-redgrey {
+    background-color: #EFE4E4;
+}
+
+.work-twojacks {
+    background-image: url("../img/work/twojacks.png");
+}
+
+.work-salesrabbit {
+    background-image: url("../img/work/salesrabbit.png");
+}
+
+.work-typhoom {
+    background-image: url("../img/work/typhoom.png");
+}
+
+.work-acrodoodle {
+    background-image: url("../img/work/acrodoodle.png");
+}
+
+.work p {
+    line-height: .5em;
+    font-weight: bold;
 }
 
 .no-padding {
