@@ -69,5 +69,4 @@ $(document).ready(function() {
 
     GREYFIELD.preLoad();
     GREYFIELD.contactForm();
-    GREYFIELD.scrollToTop();
 });

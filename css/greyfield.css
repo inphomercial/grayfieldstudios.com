@@ -83,7 +83,15 @@ div.title-banner {
     INTRO SECTION
 =============================================================================*/
 section.intro p {
-    font-size: 18px;
+}
+
+p.intro-text {
+    font-size: 27px;
+}
+
+p.intro-text-bold {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 div.small-logo {
