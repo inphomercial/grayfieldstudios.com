@@ -116,20 +116,74 @@ section.skills {
 =============================================================================*/
 section.work {
     padding: 0;
-    background-color: #ebebeb;
 }
 
 .work-box {
     width: 100%;
     height: 245px;
-    color: white;
     padding-top: 40%;
-    background-repeat: no-repeat;
+    background-color: white;
 }
 
-.work-box-empty {
+.work-box:hover .overlay {
+    display: block;
+    opacity: 0.35;
+    background: black;
+}
+
+.overlay {
     width: 100%;
-    height: 245px;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.work-text {
+    visibility: hidden;
+    position: relative;
+    line-height: .5em;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: white;
+    font-size: 18px;
+}
+
+.work-box:hover .work-text {
+    z-index: 2;
+    visibility: visible;
+    left: 0;
+    top: 0;
+}
+
+/* .work-box p { */
+/*     line-height: .5em; */
+/*     font-weight: bold; */
+/*     letter-spacing: 4px; */
+/*     color: white; */
+/*     font-size: 18px; */
+/* } */
+
+.work-box img {
+    margin: 0 auto;
+    width: 200px;
+    left: 25px;
+    bottom: 50px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+}
+
+.work-viralit {
+    bottom: 100px !important;
+}
+
+.work-acrodoodle {
+    bottom: 110px !important;
+    width: 230px !important;
+    left: 11px !important;
 }
 
 .work-offwhite {
@@ -148,26 +202,6 @@ section.work {
     background-color: #EFE4E4;
 }
 
-.work-twojacks {
-    background-image: url("../img/work/twojacks.png");
-}
-
-.work-salesrabbit {
-    background-image: url("../img/work/salesrabbit.png");
-}
-
-.work-typhoom {
-    background-image: url("../img/work/typhoom.png");
-}
-
-.work-acrodoodle {
-    background-image: url("../img/work/acrodoodle.png");
-}
-
-.work p {
-    line-height: .5em;
-    font-weight: bold;
-}
 
 .no-padding {
     padding-left: 0;
