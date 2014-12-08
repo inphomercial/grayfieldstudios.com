@@ -83,6 +83,12 @@ div.title-banner {
     INTRO SECTION
 =============================================================================*/
 section.intro p {
+    display: inline;
+}
+
+p.intro-text-italic {
+    font-style: italic;
+    font-size: 27px;
 }
 
 p.intro-text {
