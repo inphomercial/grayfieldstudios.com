@@ -126,7 +126,7 @@ section.work {
 
 .work-box:hover .overlay {
     display: block;
-    opacity: 0.35;
+    opacity: 0.45;
     background: black;
     -webkit-transition: opacity .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
@@ -143,6 +143,7 @@ section.work {
     top: 0;
     left: 0;
     opacity: 0;
+    z-index: 2;
 }
 
 .work-text-group {
@@ -201,6 +202,12 @@ section.work {
     bottom: 110px !important;
     width: 230px !important;
     left: 11px !important;
+}
+
+#work-twojacks {
+    width: 240px !important;
+    left: 0 !important;
+    bottom: 0 !important;
 }
 
 .work-offwhite {
