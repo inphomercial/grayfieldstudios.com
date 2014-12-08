@@ -9,7 +9,18 @@
 @font-face {
     font-family: 'FoundersGrotesk';
     src: url('../fonts/FoundersGroteskWeb-Regular.woff');
+}
+
+@font-face {
+    font-family: 'FoundersGrotesk';
+    src: url('../fonts/FoundersGroteskTextWeb-Semibold.woff');
     font-weight: bold;
+}
+
+@font-face {
+    font-family: 'FoundersGrotesk';
+    src: url('../fonts/FoundersGroteskTextWeb-RegularItalic.woff');
+    font-style: italic;
 }
 
 body {
@@ -96,7 +107,7 @@ p.intro-text {
 }
 
 p.intro-text-bold {
-    font-size: 30px;
+    font-size: 27px;
     font-weight: bold;
 }
 
