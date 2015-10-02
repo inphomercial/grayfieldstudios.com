@@ -3,7 +3,6 @@
 * Contact Form Class
 */
 
-
 header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 2015 05:00:00 GMT');
 header('Content-type: application/json');
@@ -24,7 +23,6 @@ class Contact_Form{
 		$this->message_min_length = $message_min_length;
 
 		$this->response_status = 1;
-		// $this->response_html = '';
 		$this->response_html = Array();
 	}
 
@@ -34,9 +32,9 @@ class Contact_Form{
 
 		if($this->email == '') {
 			return false;
-		} else {
-			$string = preg_replace($regex, '', $this->email);
 		}
+
+		$string = preg_replace($regex, '', $this->email);
 
 		return empty($string) ? true : false;
 	}
@@ -44,40 +42,27 @@ class Contact_Form{
 
 	private function validateFields(){
 		// Check name
-		if(!$this->name)
-		{
-            // $this->response_html .= '<p>Please enter your name</p>';
-            // array_push($this->response_html, "Please enter a name";);
+		if(!$this->name) {
             $this->response_html["name"] = "Please enter a name";
-			// $this->response_html .= '<p>Please enter your name</p>';
 			$this->response_status = 0;
 		}
 
 		// Check email
-		if(!$this->email)
-		{
-            // $this->response_html .= '<p>Please enter an e-mail address</p>';
+		if(!$this->email) {
             $this->response_html["email"] = "Please enter an email address";
-            // array_push($this->response_html, "Please enter an email address");
 			$this->response_status = 0;
 		}
 
 		// Check valid email
-		if($this->email && !$this->validateEmail())
-		{
-            // $this->response_html .= '<p>Please enter a valid e-mail address</p>';
-            // array_push($this->response_html, "Please enter a valid email address");
+		if($this->email && !$this->validateEmail()) {
             $this->response_html["email"] = "Please enter a valid email address";
 			$this->response_status = 0;
 		}
 
 		// Check message length
-		if(!$this->message || strlen($this->message) < $this->message_min_length)
-        {
+		if(!$this->message || strlen($this->message) < $this->message_min_length) {
             $this->response_html["message"] = "Please enter a message that is at least " . $this->message_min_length . " characters.";
-            // array_push($this->response_html, "Pleaes enter a message that is at least " . $this->message_min_length . " characters");
-			// $this->response_html .= '<p>Please enter your message. It should have at least '.$this->message_min_length.' characters</p>';
-			$this->response_status = 0;
+           	$this->response_status = 0;
 		}
 	}
 
@@ -85,10 +70,9 @@ class Contact_Form{
 		$mail = mail($this->email_admin, $this->subject, $this->message,
 			 "From: ".$this->name." <".$this->email.">\r\n"
 			."Reply-To: ".$this->email."\r\n"
-		."X-Mailer: PHP/" . phpversion());
+		    ."X-Mailer: PHP/" . phpversion());
 
-		if($mail)
-		{
+		if($mail) {
 			$this->response_status = 1;
 			$this->response_html['name'] = '<p>Thank You!</p>';
 		}
@@ -96,8 +80,8 @@ class Contact_Form{
 
 	public function sendRequest(){
 		$this->validateFields();
-		if($this->response_status)
-		{
+
+		if($this->response_status) {
 			$this->sendEmail();
 		}
 
@@ -111,5 +95,3 @@ class Contact_Form{
 
 $contact_form = new Contact_Form($_POST, $admin_email, $message_min_length);
 $contact_form->sendRequest();
-
-?>

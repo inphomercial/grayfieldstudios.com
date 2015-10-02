@@ -1,9 +1,8 @@
 
 var GREYFIELD = window.GREYFIELD || {};
 
-/* #################
- * # Preload Splash
- * #################
+/**
+ * Preload Splash
  */
 GREYFIELD.preLoad = function() {
 
@@ -24,21 +23,16 @@ GREYFIELD.preLoad = function() {
             $('#fullPage').fadeOut(1000);
         }
     );
-}
+};
 
-/* ###################
- * # Contact Form
- * ##################
+/**
+ * Contact Form
  */
 GREYFIELD.contactForm = function(){
+
 	$("#contact-submit").on('click',function() {
 		$contact_form = $('#contact-form');
-
-        console.log($contact_form);
-
-		var fields = $contact_form.serialize();
-
-        console.log(fields);
+        var fields = $contact_form.serialize();
 
 		$.ajax({
 			type: "POST",
@@ -60,12 +54,11 @@ GREYFIELD.contactForm = function(){
 		});
 		return false;
 	});
-}
-
+};
 
 $(document).ready(function() {
 
-    console.log("Greyfield JS - Loaded");
+    console.log("Greyfield Studios JS - Loaded");
 
     GREYFIELD.preLoad();
     GREYFIELD.contactForm();
